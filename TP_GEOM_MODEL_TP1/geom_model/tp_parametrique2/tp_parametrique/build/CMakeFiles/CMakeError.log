@@ -1,0 +1,111 @@
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4c61a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4c61a.dir/build.make CMakeFiles/cmTC_4c61a.dir/build
+make[1] : on entre dans le répertoire « /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_4c61a.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_4c61a.dir/CheckSymbolExists.cxx.o -c /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_4c61a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4c61a.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_4c61a.dir/CheckSymbolExists.cxx.o] Error 1
+make[1] : on quitte le répertoire « /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp »
+Makefile:126: recipe for target 'cmTC_4c61a/fast' failed
+make: *** [cmTC_4c61a/fast] Error 2
+
+File /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6baac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6baac.dir/build.make CMakeFiles/cmTC_6baac.dir/build
+make[1] : on entre dans le répertoire « /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_6baac.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_6baac.dir/CheckSymbolExists.cxx.o -c /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_6baac.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6baac.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_6baac.dir/CheckSymbolExists.cxx.o] Error 1
+make[1] : on quitte le répertoire « /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp »
+Makefile:126: recipe for target 'cmTC_6baac/fast' failed
+make: *** [cmTC_6baac/fast] Error 2
+
+File /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2a45c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2a45c.dir/build.make CMakeFiles/cmTC_2a45c.dir/build
+make[1] : on entre dans le répertoire « /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_2a45c.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_2a45c.dir/CheckSymbolExists.cxx.o -c /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+/home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_2a45c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2a45c.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_2a45c.dir/CheckSymbolExists.cxx.o] Error 1
+make[1] : on quitte le répertoire « /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp »
+Makefile:126: recipe for target 'cmTC_2a45c/fast' failed
+make: *** [cmTC_2a45c/fast] Error 2
+
+File /home/guillaume/Documents/Geom/geom_model/tp_parametrique2/tp_parametrique/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

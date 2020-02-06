@@ -1,0 +1,33 @@
+====================================
+Pour compiler votre programme:
+====================================
+
+Méthode 1: A l'aide du Makefile.
+> cd src/
+> make
+
+Méthode 2: A l'aide de CMake
+> mkdir build
+> cd build
+> cmake ..
+> make
+
+
+
+====================================
+Pour executer votre programme:
+====================================
+
+Vous devez lancer votre programme depuis le repertoire src/.
+Plus précisément, les fichiers "shader.frag" et "shader.vert" doivent être accessibles depuis le repertoire d'où est lancé le programme.
+
+- Si vous avez utilisé le Makefile:
+> ./executable (depuis le répertoire src/)
+
+- Si vous avez utilisé CMake dans le répertoire build/
+Placez vous dans le répertoire src/ puis lancez
+> ../build/executable
+
+- Si vous souhaitez compiler et lancer votre executable depuis QtCreator, configurez le répertoire d'exécution dans src/
+Pour cela, allez dans l'onglet "Projects" (menus à gauche), et modifiez le chemin d'exécution dans l'onglet "Run", Directory:
+Remarque: Ne modifiez pas le chemin du "Build", c'est à dire l'endroit où sont compilés les fichiers.

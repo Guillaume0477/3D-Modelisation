@@ -1,0 +1,68 @@
+
+Introduction:
+
+
+Voici un programme minimaliste utilisant Qt version 4 (http://qt-project.org/doc/qt-4.8/), une bibliothèque de développement permettant de gérer facilement des interfaces utilisateurs (boutons, fenêtres, évènements ...) de manière portable entre plateformes.
+
+
+===================================================
+
+
+1. Fichier Hello_world.cpp 
+--------------------------
+
+Considérons le cas du fichier hello_wold.cpp (dans le répertoire src/).
+
+Observez celui-ci avec un éditeur de texte quelconque.
+
+Il s'agit d'un fichier contenant du code C++ et utilisant la librairie Qt.
+- QApplication (http://qt-project.org/doc/qt-4.8/qapplication.html) est un objet Qt permettant de gérer l'interface. 
+Le lancement de l'interface est réalisé par le dernier l'appel QApplication.exec()
+- QPushButton (http://qt-project.org/doc/qt-4.8/qpushbutton.html) est ce que l'on appelle un widget, c'est à dire un "élément graphique interactif" tel qu'un bouton, une entrée utilisateur, une horloge, etc. que l'on peut venir placer dans une fenêtre. Ici il s'agit d'un bouton sur lequel on peut cliquer.
+
+
+2. Makefile
+---------------------------
+
+Un Makefile vous est fourni dans les sources.
+
+Observez celui-ci. Il est un peu plus long que pour les programmes que vous avez généralement vus de par la nécessiter d'indiquer les chemins vers la bibliothèque Qt. Cependant, vous devez être en mesure de le comprendre et l'éditer.
+
+Les 3 premières lignes (sans compter les commentaires) sont dédiées à l'indication des chemins et variables liés à Qt. Notez que les noms de variables sont arbitraires, ce ne sont pas des standards reconnus par Make, et vous êtes libres d'utiliser d'autres noms de variables si vous le souhaitez.
+
+La première ligne (QT_DIR_BASE) indique le chemin de base de Qt version 4 dans une variable QT_DIR_BASE (La toute dernière version de Qt est la 5). Il est possible de devoir adapter ce chemin en fonction de votre installation.
+
+La seconde ligne (QT_INCLUDE) indique les chemins à inclure lors de la compilation afin que les fichiers d'en-têtes soient visibles lors de leur inclusion par #include.
+(Pour rappel l'option du compilateur -I[PATH] permet d'indiquer un répertoire à inclure lors de la recherche des fichiers appelés par la commande #include).
+
+La troisième ligne (QT_DEPENDENCIES) indique les dépendances des bibliothèques liées à Qt que l'on utilise lors de l'édition des liens.
+(Pour rappel -l[NOM] demande à l'éditeur de liens (link) de se lier à la bibliothèque lib[NOM].so ou lib[NOM].a présent dans le répertoire /lib).
+
+Les lignes suivantes sont des commandes standards qui définissent les options de compilations, options de l'édition des liens, ainsi que le compilateur et les fichiers à compiler.
+
+
+Compilez le projet à l'aide de ce Makefile et lancez l'exécutable.
+
+
+
+3. Compilation par le biais de QMake
+-------------------------------------
+
+Assurez-vous de supprimer tous les fichiers temporaires en appelant make clean sur le Makefile de base.
+
+Placez vous dans le répertoire en amont de src/ (ne faites pas la manipulation dans src/ sinon vous écraseriez le Makefile existant).
+
+Utilisez la démarche de compilation vue lors du premier TP pour générer un nouveau Makefile à l'aide de l'outil QMake. Vous devriez avoir un fichier partie_01.pro dans le répertoire partie_01.pro.
+(qmake -project, qmake-qt4 partie_01.pro,  etc ...)
+
+Rem. Si vous possédez Qt4 et Qt5 en parallèle, il faut explicitement appeler qmake-qt4 et non qmake que le fichier .pro. Dans le cas contraire, les chemins placés dans le Makefile seront ceux de Qt5 et vous obtiendrez une erreur de compilation du type "QApplication: No such file ...". 
+
+
+4. Modification du code
+------------------------
+
+Chargez le projet à l'aide de QtCreator à partir du fichier .pro (ou à partir de votre IDE habituel)
+$ qtcreator partie_1.pro
+
+-> Créez un second bouton dans ce même programme. Observez le résultat.
+
